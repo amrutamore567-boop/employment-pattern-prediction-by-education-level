@@ -2,6 +2,7 @@ from google import genai
 from flask import Flask,render_template,request,jsonify
 import joblib
 import numpy as np
+import os
 Client=genai.Client(api_key="GEMINI_KEY")
 
 model=joblib.load("employment_model.pkl")
@@ -38,4 +39,4 @@ def predict():
         "probability": round(probability*100, 2)
     })
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

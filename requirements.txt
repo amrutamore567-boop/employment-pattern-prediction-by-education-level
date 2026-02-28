@@ -1,6 +1,6 @@
-streamlit
-pandas
+flask
+gunicorn
 numpy
+joblib
 scikit-learn
-matplotlib
 google-genai
